@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="3.815" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-09-10T04:34:14" tests="0" file="cypress\e2e\carrinho.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Carrinho" timestamp="2026-09-10T04:34:14" tests="1" time="3.812" failures="0">
+    <testcase name="Carrinho Fluxo de adicionar e remover no carrinho" time="2.634" classname="Fluxo de adicionar e remover no carrinho">
+    </testcase>
+  </testsuite>
+</testsuites>

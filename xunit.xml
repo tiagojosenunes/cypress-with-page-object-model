@@ -1,0 +1,4 @@
+<testsuite name="Mocha Tests" tests="2" failures="0" errors="0" skipped="0" timestamp="Thu, 10 Sep 2026 04:32:40 GMT" time="2.355">
+<testcase classname="Login" name="Realizar login com sucesso" time="0.817"/>
+<testcase classname="Login" name="Realizar login com credenciais invalidas" time="0.529"/>
+</testsuite>
