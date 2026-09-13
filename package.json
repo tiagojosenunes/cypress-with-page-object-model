@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "cy:open:chrome": "npx cypress open --browser chrome",
-    "cy:run:chrome": "npx cypress run --browser chrome"
+    "cy:open:chrome": "cypress open --browser chrome",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cypress:open:dev": "cypress open --config-file config-dev.js --browser chrome",
+    "cypress:open:qa": "cypress open --config-file config-qa.js --browser chrome"
   },
   "keywords": [],
   "author": "",
