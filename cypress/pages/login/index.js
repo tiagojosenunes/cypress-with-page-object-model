@@ -7,9 +7,11 @@ class Login {
     }
 
     preencherCredenciaisValidas(){
-        cy.get(el.username).type('standard_user')
-        cy.get(el.password).type('secret_sauce')
+    cy.env(['username', 'password']).then(({username,password})=> {
+        cy.get(el.username).type(username)
+        cy.get(el.password).type(password)
         cy.get(el.loginButton).click()
+    })
     }
 
     preencherCredenciaisInvalidas (){
