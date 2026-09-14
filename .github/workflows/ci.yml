@@ -1,10 +1,16 @@
 name: End-to-end tests
-on: push
+
+on: [push, pull_request]
+
 jobs:
   cypress-run:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
+
       - name: Cypress run
         uses: cypress-io/github-action@v7
+        env:
+          CYPRESS_username: ${{ secrets.CYPRESS_USERNAME }}
+          CYPRESS_password: ${{ secrets.CYPRESS_PASSWORD }}
