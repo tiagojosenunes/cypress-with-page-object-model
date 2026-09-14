@@ -8,9 +8,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Cypress run
         uses: cypress-io/github-action@v7
         env:
           CYPRESS_username: ${{ secrets.CYPRESS_USERNAME }}
           CYPRESS_password: ${{ secrets.CYPRESS_PASSWORD }}
+      - uses: actions/upload-artifact@v7
+        with:
+          name: cypress-reports
+          path: cypress/reports
+          if-no-files-found: ignore
+      - uses: actions/upload-artifact@v7
+        with:
+          name: cypress-videos
+          path: cypress/videos
+          if-no-files-found: ignore
